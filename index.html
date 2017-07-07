@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="css/css.css" />
+<script src="js/js.js"></script>
+<script>
+window.onload = function(){
+	var fjdz = new Feijidazhan();
+	
+	document.querySelector(".zhunbei>input[type=button]").onclick = function(){
+		fjdz.play();
+	}
+}
+</script>
+</head>
+<body>
+	<div class="feijidazhan">
+		<div class="youxizhong">
+			<div class="tiankong"></div>
+			<div class="fenshu">
+				<span>分数：</span>
+				<span>0</span>
+			</div>
+			<div class="woji"></div>
+			<div class="tingzhi">
+				<br>游戏结束<br><br>
+				<span>分数：</span>
+				<span>0</span><br><br>
+				<input type="button" value="重新开始" />
+			</div>
+		</div>
+		<div class="zhunbei">
+			<input type="button" value="开始游戏" />
+		</div>		
+	</div>
+</body>
+</html>

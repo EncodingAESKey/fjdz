@@ -1,0 +1,104 @@
+*{
+	margin:0;
+	padding: 0;
+}
+/*飞机大战  舞台*/
+.feijidazhan{
+	width: 320px;
+	height: 568px;
+	border: 1px solid gray;
+	margin: 10px auto;	
+	overflow: hidden;
+	position: relative;
+	
+}
+.feijidazhan>div{
+	position: absolute;
+	width: 100%;
+	left: 0;
+}
+/*准备*/
+.zhunbei{
+	background-image: url(../images/开始背景.png);
+	height: 100%;
+	top: 0;
+}
+.zhunbei>input{
+	position: absolute;
+    top: 500px;
+    left: 82px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #c4c9ca;
+}
+
+/*游戏中*/
+.youxizhong{
+	height: 100%;
+	top: 0;
+}
+.youxizhong>*{
+	position: absolute;
+}
+/*天空*/
+.tiankong{
+	background-image: url(../images/背景.png);
+	width: 100%;
+	height: 200%;
+	top: -568px;
+	left: 0px;
+}
+/*分数*/
+.fenshu{
+	font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 9;
+}
+
+/*我机*/
+.woji{
+	width: 66px;
+	height: 80px;
+	background: url(../images/我的飞机.gif);
+	left: 127px;
+	top: 488px;
+}
+.paodan{
+	width: 6px;
+	height: 14px;
+	background: url(../images/我的飞机炮弹.png);
+}
+/*敌机*/
+.diji>*{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/*停止*/
+.tingzhi{
+	position: absolute;
+    top: 200px;
+    left: 52px;
+    width: 210px;
+    height: 190px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #c4c9ca;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 9;
+    text-align: center;
+    display: none;
+}
+.tingzhi>input{	
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: #c4c9ca;
+}
